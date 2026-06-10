@@ -1,0 +1,87 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: row;
+    align-items: center;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mode-landscape .sl-content-col {
+    width: 52%;
+    padding-right: 2rem;
+  }
+  .mode-portrait .sl-content-col {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .mode-landscape .sl-visual-col {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mode-portrait .sl-visual-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full p-10 flex flex-col" style="background: linear-gradient(135deg, #FFF9E2 0%, #FFD500 100%);">
+    <div class="flex-1 flex sl-layout" style="display:flex;">
+
+      <!-- Content Column -->
+      <div class="sl-content-col flex flex-col justify-center" style="min-width:0;">
+        <!-- Category label -->
+        <div class="inline-flex items-center mb-6">
+          <span class="text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full"
+                style="background:#FFD500; color:#7A4400; border: 1.5px solid #E5B800; letter-spacing:0.18em;">
+            Mobile Alarm App
+          </span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-black leading-none mb-4" style="font-size:4.2rem; color:#3B1A00; line-height:1.05; letter-spacing:-0.02em;">
+          Wake Up,<br>
+          <span style="color:#D97706;">Good Morning!</span>
+        </h1>
+
+        <!-- Tagline -->
+        <p class="mb-8" style="font-size:1.15rem; color:#7A4400; max-width:36ch; line-height:1.6; font-weight:500;">
+          A cheerful, cute alarm experience that makes waking up feel fun — not frightening.
+          Your friendly dino companion is always ready to greet the morning with you.
+        </p>
+
+        <!-- Pill badges -->
+        <div class="flex flex-wrap gap-2 mb-10">
+          <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:#FFF9E2; color:#7A4400; border:1px solid #FFD500;">3D Cute Design</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:#FFF9E2; color:#7A4400; border:1px solid #FFD500;">Dino Character</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:#FFF9E2; color:#7A4400; border:1px solid #FFD500;">Analog Clock UI</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold" style="background:#FFF9E2; color:#7A4400; border:1px solid #FFD500;">Set Alarm</span>
+        </div>
+
+        <!-- Attribution -->
+        <data-attribution />
+      </div>
+
+      <!-- Visual Column -->
+      <div class="sl-visual-col">
+        <div class="relative" style="width:340px; height:340px;">
+          <!-- Background blob -->
+          <div class="absolute inset-0 rounded-full"
+               style="background: radial-gradient(circle, #FFD500 0%, #FFAB00 60%, #FF8C00 100%); opacity:0.18; transform: scale(1.1);"></div>
+          <!-- App illustration -->
+          <img
+            src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=cute+yellow+3D+dinosaur+character+waving+next+to+a+round+orange+sleepy+alarm+clock+with+closed+eyes+and+open+mouth%2C+pastel+bedroom+background%2C+bright+cheerful+kawaii+style%2C+soft+lighting%2C+isolated+on+warm+yellow+gradient"
+            alt="WAKE UP app mascot"
+            class="relative z-10 w-full h-full object-contain drop-shadow-xl"
+            style="filter: drop-shadow(0 8px 32px rgba(217,119,6,0.28));"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
