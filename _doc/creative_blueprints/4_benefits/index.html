@@ -1,0 +1,87 @@
+<style>
+  .mode-landscape .sl-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mode-portrait .sl-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mode-landscape .sl-roi {
+    grid-column: span 3;
+  }
+  .mode-portrait .sl-roi {
+    grid-column: span 2;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full p-10 flex flex-col" style="background: linear-gradient(160deg, #FFF9E2 0%, #FFFFFF 70%);">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full"
+            style="background:#FFD500; color:#7A4400; letter-spacing:0.18em;">
+        Benefits
+      </span>
+      <h2 class="font-black mt-3" style="font-size:2rem; color:#3B1A00; line-height:1.15;">
+        A morning routine you'll actually enjoy
+      </h2>
+      <p style="font-size:0.95rem; color:#7A4400; margin-top:0.35rem;">
+        WAKE UP replaces dread with delight — measurable improvements in how you start your day.
+      </p>
+    </div>
+
+    <!-- Metric cards + ROI -->
+    <div class="sl-grid flex-1" style="display:grid; gap:1rem; min-height:0;">
+
+      <!-- Metric 1 -->
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background:#3B1A00;">
+        <span class="text-xs font-bold uppercase tracking-widest" style="color:#FFD500;">Mood</span>
+        <div>
+          <div class="font-black" style="font-size:2.6rem; color:#FFD500; line-height:1;">+😊</div>
+          <div class="font-semibold mt-1" style="font-size:0.88rem; color:#FFF0C0; line-height:1.5;">
+            Positive emotional start replaces alarm anxiety with a friendly character greeting.
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric 2 -->
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background:#FFD500;">
+        <span class="text-xs font-bold uppercase tracking-widest" style="color:#7A4400;">Engagement</span>
+        <div>
+          <div class="font-black" style="font-size:2.6rem; color:#3B1A00; line-height:1;">3D</div>
+          <div class="font-semibold mt-1" style="font-size:0.88rem; color:#7A4400; line-height:1.5;">
+            Immersive 3D kawaii art style keeps users engaged and coming back to the app daily.
+          </div>
+        </div>
+      </div>
+
+      <!-- Metric 3 -->
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background:#FFF0C0; border:1.5px solid #FFD500;">
+        <span class="text-xs font-bold uppercase tracking-widest" style="color:#D97706;">Ease of Use</span>
+        <div>
+          <div class="font-black" style="font-size:2.6rem; color:#3B1A00; line-height:1;">1-tap</div>
+          <div class="font-semibold mt-1" style="font-size:0.88rem; color:#7A4400; line-height:1.5;">
+            Single SET ALARM button — set and forget. No configuration maze.
+          </div>
+        </div>
+      </div>
+
+      <!-- ROI Summary -->
+      <div class="sl-roi rounded-2xl p-6 flex items-center gap-6" style="background: linear-gradient(90deg, #FFAB00 0%, #FFD500 100%);">
+        <div class="text-4xl flex-shrink-0">🦕</div>
+        <div>
+          <div class="font-black mb-1" style="font-size:1.25rem; color:#3B1A00;">
+            Why WAKE UP wins: warmth + simplicity + personality
+          </div>
+          <p style="font-size:0.9rem; color:#7A4400; line-height:1.6;">
+            By combining a bold warm gradient palette (FFD500 → FFF9E2), an expressive dino mascot, and a
+            character-driven analog clock, WAKE UP turns the most dreaded moment of the day into a moment
+            of genuine joy. Users open the app not out of necessity, but because they want to.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
